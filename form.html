@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dev Application</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            h1 {
+                margin: 0px;
+            }
+            h2 {
+                margin-top: 45px;
+            }
+            p {
+                text-align: center;
+                font-weight: 700;
+            }
+            #small {
+                font-weight: 400;
+            }
+            #header {
+                background-image: url(img/grey.jpeg);
+                background-size: cover;
+                background-position: center;
+
+                color: #fff;
+                text-shadow: 0px 0px 10px #000;
+                font-size: 1.8em;
+                text-align: center;
+                height: 500px;
+                line-height: 500px;
+            }
+            form {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 15px;
+            }
+            #footer {
+                background-color: #000;
+                height: 55px;
+                color: #fff;
+                text-align: center;
+                line-height: 55px;
+                font-size: .85em;
+            }
+            button {
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            #submit-btn {
+                background-color: #205e86;
+                color: #fff;
+            }
+            .form-item {
+                margin: 25px 0px;
+            }
+            .label {
+                display: block;
+                width: 250px;
+                float: left;
+            }
+            #check {
+                float: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Dev Team Application</h1>
+        </div>
+
+        <form action="confirmation.html">
+
+            <p>Please fill out every portion of this application!</p>
+            <p>Note that interviews will be held next Monday, Tuesday, Wednesay and Thursday. </p>
+            <p id="small">If you have any questions, email <a href="mailto:devteam@usc.edu">devteam@usc.edu</a></p>
+
+            <div class="form-item">
+                <label for="name-id" class="label">First Name:</label>
+                <input type="text" id="name-id" placeholder="Albert">
+            </div>
+
+            <div class="form-item">
+                <label for="last-id" class="label">Last Name:</label>
+                <input type="text" id="last-id" placeholder="Einstein">
+            </div>
+
+            <div class="form-item">
+                <label for="email-id" class="label">Email:</label>
+                <input type="email" id="email-id" placeholder="aeinstein@usc.edu">
+            </div>
+
+            <div class="form-item">
+                <label for="number-id" class="label">Phone Number:</label>
+                <input type="number" id="number-id" placeholder="888 888 8888">
+            </div>
+
+            <div class="form-item">
+                <label class="label">Select Position of Interest:</label>
+                <label>
+                    <input type="radio" name="position">
+                    Developer
+                </label>
+                <label>
+                    <input type="radio" name="position">
+                    UX/UI Designer
+                </label>
+                <label>
+                    <input type="radio" name="position">
+                    Team Manager
+                </label>
+            </div>
+
+            <div class="form-item">
+                <label class="label">Choose 1 or 2 days to schedule an interview:</label>
+                <label>
+                    <input type="checkbox">
+                    Monday 
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Tuesday
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Wednesday
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Thursday
+                </label>
+            </div>
+
+            <div class="form-item">
+                <label for="class-id" class="label">Class Standing:</label>
+                <select id="class-id">
+                    <option>-Select-</option>
+                    <option>Freshman</option>
+                    <option>Sophmore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                    <option>Graduate Student</option>
+                    <option>Earned BA or BS Degree</option>   
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="team-id" class="label">What could you bring to the team?</label>
+                <textarea id="team-id" placeholder="Start response here..."></textarea>
+            </div>
+
+            <div class="form-item">
+                <label class="label" id="check">
+                    <input type="checkbox">
+                    I accept terms and conditions
+                </label>
+            </div>
+
+            <div class="form-item">
+                <button type="submit" id="submit-btn">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <div id="footer">
+            University of Southern California &copy; 2019
+        </div>
+        
+    </body>
+</html>
